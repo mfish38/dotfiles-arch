@@ -45,8 +45,8 @@ sudo mkdir -p /etc/firefox/policies
 sudo stow --adopt --target=/etc/firefox etc_firefox
 
 # Dolphin
-pac dolphin
-xdg-mime default org.kde.dolphin.desktop inode/directory
+# pac dolphin
+# xdg-mime default org.kde.dolphin.desktop inode/directory
 
 # Discord
 pac discord

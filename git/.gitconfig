@@ -1,10 +1,10 @@
 [user]
-        name = mfish38
-        email = markdfisher38@gmail.com
-        signingkey = 5C50745C8732A7E2
+    name = mfish38
+    email = markdfisher38@gmail.com
+    signingkey = 5C50745C8732A7E2
 [commit]
-        gpgsign = true
+    gpgsign = true
 [tag]
-        gpgSign = true
+    gpgSign = true
 [credential]
-	helper = /usr/lib/git-core/git-credential-libsecret
+    helper = /usr/lib/git-core/git-credential-libsecret

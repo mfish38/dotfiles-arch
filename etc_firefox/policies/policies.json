@@ -9,13 +9,13 @@
     "ExtensionSettings": {
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
-	"install_url": "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi",
-	"private_browsing": true
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi",
+        "private_browsing": true
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "installation_mode": "force_installed",
-	"install_url": "https://addons.mozilla.org/firefox/downloads/latest/{3c078156-979c-498b-8990-85f7987dd929}/latest.xpi",
-	"private_browsing": true
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{3c078156-979c-498b-8990-85f7987dd929}/latest.xpi",
+        "private_browsing": true
       }
     },
     "FirefoxHome": {
@@ -46,5 +46,5 @@
     "NewTabPage": false,
     "OfferToSaveLogins": false,
     "PasswordManagerEnabled": false
-  }    
+  }
 }
