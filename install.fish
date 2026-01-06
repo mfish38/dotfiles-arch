@@ -18,8 +18,14 @@ end
 pac stow
 aur stew
 
+# Fish
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher
+
 # Niri
 pac xdg-desktop-portal-gnome
+
+# Docker
+pac docker docker-compose
 
 # Ghostty
 dotstow ghostty
@@ -27,9 +33,6 @@ dotstow ghostty
 # Git
 pac libsecret
 dotstow git
-
-# Fish
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher
 
 # Fonts
 pac ttf-gohu-nerd
