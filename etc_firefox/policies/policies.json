@@ -6,6 +6,23 @@
     "DisableFormHistory": true,
     "DisableSetDesktopBackground": true,
     "DisableTelemetry": true,
+    "DNSOverHTTPS": {
+      "Enabled": true,
+      "Locked": true,
+      "Fallback": false
+    },
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "SuspectedFingerprinting": true,
+      "Category": "strict",
+      "Exceptions": [],
+      "BaselineExceptions": true,
+      "ConvenienceExceptions": false
+    },
     "ExtensionSettings": {
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
@@ -43,8 +60,18 @@
       "TabGroups": false,
       "Locked": true
     },
+    "HttpsOnlyMode": "force_enabled",
     "NewTabPage": false,
     "OfferToSaveLogins": false,
-    "PasswordManagerEnabled": false
+    "PasswordManagerEnabled": false,
+    "Permissions": {
+      "Notifications": {
+        "BlockNewRequests": true,
+        "Locked": false
+      }
+    },
+    "SearchEngines": {
+      "Default": "DuckDuckGo"
+    }
   }
 }
