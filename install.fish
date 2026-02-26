@@ -14,9 +14,20 @@ function dotstow
     popd; or exit
 end
 
+function etcstow
+    pushd ~/dotfiles; or exit
+    sudo stow --adopt --target=/etc/$argv --dir=etc $argv
+    popd; or exit
+end
+
 # Dotfile Setup
 pac stow
 aur stew
+
+# App Armor
+pac apparmor apparmor.d audit
+etcstow apparmor 
+systemctl enable --now apparmor.service
 
 # Fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher
@@ -45,7 +56,7 @@ set FIREFOX_PROFILE (find ~/.mozilla/firefox -maxdepth 1 -type d -name "*.defaul
 stow --adopt --target=$FIREFOX_PROFILE firefox
 
 sudo mkdir -p /etc/firefox/policies
-sudo stow --adopt --target=/etc/firefox etc_firefox
+etcstow firefox
 
 # Dolphin
 # pac dolphin
