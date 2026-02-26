@@ -28,6 +28,7 @@ aur stew
 pac apparmor apparmor.d audit
 etcstow apparmor 
 systemctl enable --now apparmor.service
+systemctl enable --now auditd
 
 # Fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher
