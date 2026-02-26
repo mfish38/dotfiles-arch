@@ -25,7 +25,7 @@ pac stow
 aur stew
 
 # App Armor
-pac apparmor apparmor.d audit
+pac apparmor audit
 etcstow apparmor 
 systemctl enable --now apparmor.service
 systemctl enable --now auditd
